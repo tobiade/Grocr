@@ -61,10 +61,10 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
         textFieldLoginPassword.resignFirstResponder()
         return true
     }
-    func dismissKeyboard(){
-        textFieldLoginEmail.endEditing(true)
-       // textFieldLoginPassword.endEditing(true)
-    }
+//    func dismissKeyboard(){
+//        textFieldLoginEmail.endEditing(true)
+//       // textFieldLoginPassword.endEditing(true)
+//    }
 
   @IBAction func loginDidTouch(sender: AnyObject) {
     ref.authUser(textFieldLoginEmail.text, password: textFieldLoginPassword.text, withCompletionBlock: {(error, auth) in
